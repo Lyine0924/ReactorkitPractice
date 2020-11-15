@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -109,7 +109,6 @@
 				143A580A6AD2F4BFD0939F28 /* Pods-ReactorkitPracticeTests.debug.xcconfig */,
 				C71D806F479DFEA3D193D046 /* Pods-ReactorkitPracticeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -583,7 +582,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73KBV8Z2RB;
+				DEVELOPMENT_TEAM = QL44HLLM22;
 				INFOPLIST_FILE = ReactorkitPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -603,7 +602,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 73KBV8Z2RB;
+				DEVELOPMENT_TEAM = QL44HLLM22;
 				INFOPLIST_FILE = ReactorkitPractice/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
