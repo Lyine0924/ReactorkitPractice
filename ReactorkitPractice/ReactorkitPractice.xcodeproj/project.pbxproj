@@ -3,15 +3,17 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		2FBB2F7F3A46B98940287E86 /* Pods_ReactorkitPractice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B6EDA274E3BA20F81871622 /* Pods_ReactorkitPractice.framework */; };
 		4DF400B7CB594690D597F975 /* Pods_ReactorkitPractice_ReactorkitPracticeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A95CC8C92E483A1AFE968B78 /* Pods_ReactorkitPractice_ReactorkitPracticeUITests.framework */; };
 		8CA6BC81ADD7B0839E35BD5A /* Pods_ReactorkitPracticeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5D68478DBE43BB24B195622 /* Pods_ReactorkitPracticeTests.framework */; };
+		EE07E1CD2561040F00CB0F31 /* ButtonReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE07E1CC2561040F00CB0F31 /* ButtonReactor.swift */; };
+		EE07E1D62561065200CB0F31 /* ButtonAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE07E1D52561065200CB0F31 /* ButtonAPI.swift */; };
 		EEDEA9D52560FEF4008069BF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDEA9D42560FEF4008069BF /* AppDelegate.swift */; };
-		EEDEA9D92560FEF4008069BF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDEA9D82560FEF4008069BF /* ViewController.swift */; };
+		EEDEA9D92560FEF4008069BF /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEDEA9D82560FEF4008069BF /* ButtonViewController.swift */; };
 		EEDEA9DC2560FEF4008069BF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDEA9DA2560FEF4008069BF /* Main.storyboard */; };
 		EEDEA9DE2560FEF6008069BF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EEDEA9DD2560FEF6008069BF /* Assets.xcassets */; };
 		EEDEA9E12560FEF6008069BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EEDEA9DF2560FEF6008069BF /* LaunchScreen.storyboard */; };
@@ -45,9 +47,11 @@
 		BE26E158CE5894F9DD8C4774 /* Pods-ReactorkitPractice-ReactorkitPracticeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactorkitPractice-ReactorkitPracticeUITests.release.xcconfig"; path = "Target Support Files/Pods-ReactorkitPractice-ReactorkitPracticeUITests/Pods-ReactorkitPractice-ReactorkitPracticeUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C71D806F479DFEA3D193D046 /* Pods-ReactorkitPracticeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactorkitPracticeTests.release.xcconfig"; path = "Target Support Files/Pods-ReactorkitPracticeTests/Pods-ReactorkitPracticeTests.release.xcconfig"; sourceTree = "<group>"; };
 		D5D68478DBE43BB24B195622 /* Pods_ReactorkitPracticeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactorkitPracticeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE07E1CC2561040F00CB0F31 /* ButtonReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonReactor.swift; sourceTree = "<group>"; };
+		EE07E1D52561065200CB0F31 /* ButtonAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonAPI.swift; sourceTree = "<group>"; };
 		EEDEA9D12560FEF4008069BF /* ReactorkitPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactorkitPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEDEA9D42560FEF4008069BF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EEDEA9D82560FEF4008069BF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EEDEA9D82560FEF4008069BF /* ButtonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
 		EEDEA9DB2560FEF4008069BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EEDEA9DD2560FEF6008069BF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EEDEA9E02560FEF6008069BF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -109,8 +113,23 @@
 				143A580A6AD2F4BFD0939F28 /* Pods-ReactorkitPracticeTests.debug.xcconfig */,
 				C71D806F479DFEA3D193D046 /* Pods-ReactorkitPracticeTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE07E1CB256103FB00CB0F31 /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				EE07E1CC2561040F00CB0F31 /* ButtonReactor.swift */,
+			);
+			path = Reactor;
+			sourceTree = "<group>";
+		};
+		EE07E1D42561063D00CB0F31 /* API */ = {
+			isa = PBXGroup;
+			children = (
+				EE07E1D52561065200CB0F31 /* ButtonAPI.swift */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 		EEDEA9C82560FEF4008069BF = {
@@ -138,8 +157,10 @@
 		EEDEA9D32560FEF4008069BF /* ReactorkitPractice */ = {
 			isa = PBXGroup;
 			children = (
+				EE07E1D42561063D00CB0F31 /* API */,
+				EE07E1CB256103FB00CB0F31 /* Reactor */,
 				EEDEA9D42560FEF4008069BF /* AppDelegate.swift */,
-				EEDEA9D82560FEF4008069BF /* ViewController.swift */,
+				EEDEA9D82560FEF4008069BF /* ButtonViewController.swift */,
 				EEDEA9DA2560FEF4008069BF /* Main.storyboard */,
 				EEDEA9DD2560FEF6008069BF /* Assets.xcassets */,
 				EEDEA9DF2560FEF6008069BF /* LaunchScreen.storyboard */,
@@ -404,7 +425,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EEDEA9D92560FEF4008069BF /* ViewController.swift in Sources */,
+				EE07E1D62561065200CB0F31 /* ButtonAPI.swift in Sources */,
+				EE07E1CD2561040F00CB0F31 /* ButtonReactor.swift in Sources */,
+				EEDEA9D92560FEF4008069BF /* ButtonViewController.swift in Sources */,
 				EEDEA9D52560FEF4008069BF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
